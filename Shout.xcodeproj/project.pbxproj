@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		182FE11B199B837B008F6477 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182FE11A199B837B008F6477 /* Foundation.framework */; };
+		182FE11D199B837B008F6477 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182FE11C199B837B008F6477 /* CoreGraphics.framework */; };
+		182FE11F199B837B008F6477 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182FE11E199B837B008F6477 /* UIKit.framework */; };
+		182FE125199B837B008F6477 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 182FE123199B837B008F6477 /* InfoPlist.strings */; };
+		182FE127199B837B008F6477 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 182FE126199B837B008F6477 /* main.m */; };
+		182FE12B199B837B008F6477 /* ShoutAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182FE12A199B837B008F6477 /* ShoutAppDelegate.m */; };
+		182FE12E199B837B008F6477 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182FE12C199B837B008F6477 /* Main_iPhone.storyboard */; };
+		182FE131199B837B008F6477 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182FE12F199B837B008F6477 /* Main_iPad.storyboard */; };
+		182FE134199B837B008F6477 /* ShoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182FE133199B837B008F6477 /* ShoutViewController.m */; };
+		182FE136199B837B008F6477 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182FE135199B837B008F6477 /* Images.xcassets */; };
+		182FE13D199B837B008F6477 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182FE13C199B837B008F6477 /* XCTest.framework */; };
+		182FE13E199B837B008F6477 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182FE11A199B837B008F6477 /* Foundation.framework */; };
+		182FE13F199B837B008F6477 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182FE11E199B837B008F6477 /* UIKit.framework */; };
+		182FE147199B837B008F6477 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 182FE145199B837B008F6477 /* InfoPlist.strings */; };
+		182FE149199B837B008F6477 /* ShoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182FE148199B837B008F6477 /* ShoutTests.m */; };
+		18471848199F87BE00DE1C0F /* ShoutConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 18471847199F87BE00DE1C0F /* ShoutConstants.m */; };
+		184D3E3019C49B04005968B7 /* ShoutPostEchoShutupAPICall.m in Sources */ = {isa = PBXBuildFile; fileRef = 184D3E2F19C49B04005968B7 /* ShoutPostEchoShutupAPICall.m */; };
+		184D3E3319C49B27005968B7 /* ShoutPostCommentAPICall.m in Sources */ = {isa = PBXBuildFile; fileRef = 184D3E3219C49B27005968B7 /* ShoutPostCommentAPICall.m */; };
+		1857653E19C74CA900F89AE8 /* ShoutCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857653C19C74CA900F89AE8 /* ShoutCommentViewController.m */; };
+		1857653F19C74CA900F89AE8 /* ShoutCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1857653D19C74CA900F89AE8 /* ShoutCommentViewController.xib */; };
+		18AFDCDA199CE03C006D457B /* ShoutFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFDCD9199CE03C006D457B /* ShoutFetch.m */; };
+		18AFDCDD199CE048006D457B /* ShoutFetchAPICall.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFDCDC199CE048006D457B /* ShoutFetchAPICall.m */; };
+		18F7D24419A1D55800125D6F /* ShoutFetchNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7D24319A1D55800125D6F /* ShoutFetchNotification.m */; };
+		18F7D24719A1D57100125D6F /* ShoutFetchNotificationCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7D24619A1D57100125D6F /* ShoutFetchNotificationCount.m */; };
+		18F7D24A19A1D59A00125D6F /* ShoutFetchComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7D24919A1D59A00125D6F /* ShoutFetchComment.m */; };
+		18F7D24D19A1D5B700125D6F /* ShoutFetchEchoUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7D24C19A1D5B700125D6F /* ShoutFetchEchoUser.m */; };
+		18F7D25019A1D5D500125D6F /* ShoutFetchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7D24F19A1D5D500125D6F /* ShoutFetchImage.m */; };
+		18F7D25319A1D5E800125D6F /* ShoutFetchUserImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7D25219A1D5E800125D6F /* ShoutFetchUserImage.m */; };
+		18F7D25619A1D60900125D6F /* ShoutFetchUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7D25519A1D60900125D6F /* ShoutFetchUserInfo.m */; };
+		18F7D25919A1D62100125D6F /* ShoutFetchUserShouts.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7D25819A1D62100125D6F /* ShoutFetchUserShouts.m */; };
+		18F7D25C19A1D63900125D6F /* ShoutPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7D25B19A1D63900125D6F /* ShoutPost.m */; };
+		18F7D25F19A1D65400125D6F /* ShoutPostEchoShutup.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7D25E19A1D65400125D6F /* ShoutPostEchoShutup.m */; };
+		18F7D26219A1D66A00125D6F /* ShoutPostComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7D26119A1D66A00125D6F /* ShoutPostComment.m */; };
+		18F7D26519A1D68800125D6F /* ShoutMuteUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7D26419A1D68800125D6F /* ShoutMuteUser.m */; };
+		18F7D26819A1D69A00125D6F /* ShoutReportAbuse.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7D26719A1D69A00125D6F /* ShoutReportAbuse.m */; };
+		18F7D26B19A2143700125D6F /* Shout.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7D26A19A2143700125D6F /* Shout.m */; };
+		18F7D26E19A2144500125D6F /* ShoutComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7D26D19A2144500125D6F /* ShoutComment.m */; };
+		7BAECA0B19A773E500C1B331 /* ShoutFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAECA0919A773E500C1B331 /* ShoutFeedTableViewController.m */; };
+		7BAECA0C19A773E500C1B331 /* ShoutFeedTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BAECA0A19A773E500C1B331 /* ShoutFeedTableViewController.xib */; };
+		7BAECA0E19A7784000C1B331 /* ShoutFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BAECA0D19A7784000C1B331 /* ShoutFeedTableViewCell.xib */; };
+		7BAECA1119A779C900C1B331 /* ShoutFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAECA1019A779C900C1B331 /* ShoutFeedTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		182FE140199B837B008F6477 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182FE10F199B837B008F6477 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 182FE116199B837B008F6477;
+			remoteInfo = Shout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		182FE117199B837B008F6477 /* Shout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		182FE11A199B837B008F6477 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		182FE11C199B837B008F6477 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		182FE11E199B837B008F6477 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		182FE122199B837B008F6477 /* Shout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shout-Info.plist"; sourceTree = "<group>"; };
+		182FE124199B837B008F6477 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		182FE126199B837B008F6477 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		182FE128199B837B008F6477 /* Shout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shout-Prefix.pch"; sourceTree = "<group>"; };
+		182FE129199B837B008F6477 /* ShoutAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoutAppDelegate.h; sourceTree = "<group>"; };
+		182FE12A199B837B008F6477 /* ShoutAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoutAppDelegate.m; sourceTree = "<group>"; };
+		182FE12D199B837B008F6477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		182FE130199B837B008F6477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		182FE132199B837B008F6477 /* ShoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoutViewController.h; sourceTree = "<group>"; };
+		182FE133199B837B008F6477 /* ShoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoutViewController.m; sourceTree = "<group>"; };
+		182FE135199B837B008F6477 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		182FE13B199B837B008F6477 /* ShoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		182FE13C199B837B008F6477 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		182FE144199B837B008F6477 /* ShoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShoutTests-Info.plist"; sourceTree = "<group>"; };
+		182FE146199B837B008F6477 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		182FE148199B837B008F6477 /* ShoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoutTests.m; sourceTree = "<group>"; };
+		18471846199F87BE00DE1C0F /* ShoutConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutConstants.h; path = constants/ShoutConstants.h; sourceTree = "<group>"; };
+		18471847199F87BE00DE1C0F /* ShoutConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutConstants.m; path = constants/ShoutConstants.m; sourceTree = "<group>"; };
+		184D3E2E19C49B04005968B7 /* ShoutPostEchoShutupAPICall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutPostEchoShutupAPICall.h; path = rest_client/ShoutPostEchoShutupAPICall.h; sourceTree = "<group>"; };
+		184D3E2F19C49B04005968B7 /* ShoutPostEchoShutupAPICall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutPostEchoShutupAPICall.m; path = rest_client/ShoutPostEchoShutupAPICall.m; sourceTree = "<group>"; };
+		184D3E3119C49B27005968B7 /* ShoutPostCommentAPICall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutPostCommentAPICall.h; path = rest_client/ShoutPostCommentAPICall.h; sourceTree = "<group>"; };
+		184D3E3219C49B27005968B7 /* ShoutPostCommentAPICall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutPostCommentAPICall.m; path = rest_client/ShoutPostCommentAPICall.m; sourceTree = "<group>"; };
+		1857653B19C74CA900F89AE8 /* ShoutCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutCommentViewController.h; path = views/ShoutCommentViewController.h; sourceTree = "<group>"; };
+		1857653C19C74CA900F89AE8 /* ShoutCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutCommentViewController.m; path = views/ShoutCommentViewController.m; sourceTree = "<group>"; };
+		1857653D19C74CA900F89AE8 /* ShoutCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShoutCommentViewController.xib; path = views/ShoutCommentViewController.xib; sourceTree = "<group>"; };
+		18AFDCD8199CE03C006D457B /* ShoutFetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutFetch.h; path = api_entities/ShoutFetch.h; sourceTree = "<group>"; };
+		18AFDCD9199CE03C006D457B /* ShoutFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutFetch.m; path = api_entities/ShoutFetch.m; sourceTree = "<group>"; };
+		18AFDCDB199CE048006D457B /* ShoutFetchAPICall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutFetchAPICall.h; path = rest_client/ShoutFetchAPICall.h; sourceTree = "<group>"; };
+		18AFDCDC199CE048006D457B /* ShoutFetchAPICall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutFetchAPICall.m; path = rest_client/ShoutFetchAPICall.m; sourceTree = "<group>"; };
+		18F7D24219A1D55800125D6F /* ShoutFetchNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutFetchNotification.h; path = api_entities/ShoutFetchNotification.h; sourceTree = "<group>"; };
+		18F7D24319A1D55800125D6F /* ShoutFetchNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutFetchNotification.m; path = api_entities/ShoutFetchNotification.m; sourceTree = "<group>"; };
+		18F7D24519A1D57100125D6F /* ShoutFetchNotificationCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutFetchNotificationCount.h; path = api_entities/ShoutFetchNotificationCount.h; sourceTree = "<group>"; };
+		18F7D24619A1D57100125D6F /* ShoutFetchNotificationCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutFetchNotificationCount.m; path = api_entities/ShoutFetchNotificationCount.m; sourceTree = "<group>"; };
+		18F7D24819A1D59A00125D6F /* ShoutFetchComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutFetchComment.h; path = api_entities/ShoutFetchComment.h; sourceTree = "<group>"; };
+		18F7D24919A1D59A00125D6F /* ShoutFetchComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutFetchComment.m; path = api_entities/ShoutFetchComment.m; sourceTree = "<group>"; };
+		18F7D24B19A1D5B700125D6F /* ShoutFetchEchoUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutFetchEchoUser.h; path = api_entities/ShoutFetchEchoUser.h; sourceTree = "<group>"; };
+		18F7D24C19A1D5B700125D6F /* ShoutFetchEchoUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutFetchEchoUser.m; path = api_entities/ShoutFetchEchoUser.m; sourceTree = "<group>"; };
+		18F7D24E19A1D5D500125D6F /* ShoutFetchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutFetchImage.h; path = api_entities/ShoutFetchImage.h; sourceTree = "<group>"; };
+		18F7D24F19A1D5D500125D6F /* ShoutFetchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutFetchImage.m; path = api_entities/ShoutFetchImage.m; sourceTree = "<group>"; };
+		18F7D25119A1D5E800125D6F /* ShoutFetchUserImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutFetchUserImage.h; path = api_entities/ShoutFetchUserImage.h; sourceTree = "<group>"; };
+		18F7D25219A1D5E800125D6F /* ShoutFetchUserImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutFetchUserImage.m; path = api_entities/ShoutFetchUserImage.m; sourceTree = "<group>"; };
+		18F7D25419A1D60900125D6F /* ShoutFetchUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutFetchUserInfo.h; path = api_entities/ShoutFetchUserInfo.h; sourceTree = "<group>"; };
+		18F7D25519A1D60900125D6F /* ShoutFetchUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutFetchUserInfo.m; path = api_entities/ShoutFetchUserInfo.m; sourceTree = "<group>"; };
+		18F7D25719A1D62100125D6F /* ShoutFetchUserShouts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutFetchUserShouts.h; path = api_entities/ShoutFetchUserShouts.h; sourceTree = "<group>"; };
+		18F7D25819A1D62100125D6F /* ShoutFetchUserShouts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutFetchUserShouts.m; path = api_entities/ShoutFetchUserShouts.m; sourceTree = "<group>"; };
+		18F7D25A19A1D63900125D6F /* ShoutPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutPost.h; path = api_entities/ShoutPost.h; sourceTree = "<group>"; };
+		18F7D25B19A1D63900125D6F /* ShoutPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutPost.m; path = api_entities/ShoutPost.m; sourceTree = "<group>"; };
+		18F7D25D19A1D65400125D6F /* ShoutPostEchoShutup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutPostEchoShutup.h; path = api_entities/ShoutPostEchoShutup.h; sourceTree = "<group>"; };
+		18F7D25E19A1D65400125D6F /* ShoutPostEchoShutup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutPostEchoShutup.m; path = api_entities/ShoutPostEchoShutup.m; sourceTree = "<group>"; };
+		18F7D26019A1D66A00125D6F /* ShoutPostComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutPostComment.h; path = api_entities/ShoutPostComment.h; sourceTree = "<group>"; };
+		18F7D26119A1D66A00125D6F /* ShoutPostComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutPostComment.m; path = api_entities/ShoutPostComment.m; sourceTree = "<group>"; };
+		18F7D26319A1D68800125D6F /* ShoutMuteUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutMuteUser.h; path = api_entities/ShoutMuteUser.h; sourceTree = "<group>"; };
+		18F7D26419A1D68800125D6F /* ShoutMuteUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutMuteUser.m; path = api_entities/ShoutMuteUser.m; sourceTree = "<group>"; };
+		18F7D26619A1D69A00125D6F /* ShoutReportAbuse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutReportAbuse.h; path = api_entities/ShoutReportAbuse.h; sourceTree = "<group>"; };
+		18F7D26719A1D69A00125D6F /* ShoutReportAbuse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutReportAbuse.m; path = api_entities/ShoutReportAbuse.m; sourceTree = "<group>"; };
+		18F7D26919A2143700125D6F /* Shout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shout.h; path = api_entities/Shout.h; sourceTree = "<group>"; };
+		18F7D26A19A2143700125D6F /* Shout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Shout.m; path = api_entities/Shout.m; sourceTree = "<group>"; };
+		18F7D26C19A2144500125D6F /* ShoutComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutComment.h; path = api_entities/ShoutComment.h; sourceTree = "<group>"; };
+		18F7D26D19A2144500125D6F /* ShoutComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutComment.m; path = api_entities/ShoutComment.m; sourceTree = "<group>"; };
+		7BAECA0819A773E500C1B331 /* ShoutFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutFeedTableViewController.h; path = views/ShoutFeedTableViewController.h; sourceTree = "<group>"; };
+		7BAECA0919A773E500C1B331 /* ShoutFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutFeedTableViewController.m; path = views/ShoutFeedTableViewController.m; sourceTree = "<group>"; };
+		7BAECA0A19A773E500C1B331 /* ShoutFeedTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShoutFeedTableViewController.xib; path = views/ShoutFeedTableViewController.xib; sourceTree = "<group>"; };
+		7BAECA0D19A7784000C1B331 /* ShoutFeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoutFeedTableViewCell.xib; sourceTree = "<group>"; };
+		7BAECA0F19A779C900C1B331 /* ShoutFeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoutFeedTableViewCell.h; path = views/ShoutFeedTableViewCell.h; sourceTree = "<group>"; };
+		7BAECA1019A779C900C1B331 /* ShoutFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoutFeedTableViewCell.m; path = views/ShoutFeedTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		182FE114199B837B008F6477 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182FE11D199B837B008F6477 /* CoreGraphics.framework in Frameworks */,
+				182FE11F199B837B008F6477 /* UIKit.framework in Frameworks */,
+				182FE11B199B837B008F6477 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182FE138199B837B008F6477 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182FE13D199B837B008F6477 /* XCTest.framework in Frameworks */,
+				182FE13F199B837B008F6477 /* UIKit.framework in Frameworks */,
+				182FE13E199B837B008F6477 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		182FE10E199B837B008F6477 = {
+			isa = PBXGroup;
+			children = (
+				182FE120199B837B008F6477 /* Shout */,
+				182FE142199B837B008F6477 /* ShoutTests */,
+				182FE119199B837B008F6477 /* Frameworks */,
+				182FE118199B837B008F6477 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		182FE118199B837B008F6477 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				182FE117199B837B008F6477 /* Shout.app */,
+				182FE13B199B837B008F6477 /* ShoutTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		182FE119199B837B008F6477 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				182FE11A199B837B008F6477 /* Foundation.framework */,
+				182FE11C199B837B008F6477 /* CoreGraphics.framework */,
+				182FE11E199B837B008F6477 /* UIKit.framework */,
+				182FE13C199B837B008F6477 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		182FE120199B837B008F6477 /* Shout */ = {
+			isa = PBXGroup;
+			children = (
+				7BAEC9F519A7649800C1B331 /* views */,
+				182FE15B199B8579008F6477 /* activities */,
+				182FE15A199B856B008F6477 /* api_entities */,
+				182FE159199B8562008F6477 /* constants */,
+				182FE158199B8532008F6477 /* functions */,
+				182FE157199B8527008F6477 /* gcm */,
+				182FE156199B847C008F6477 /* location_service */,
+				182FE155199B8474008F6477 /* loginmanager */,
+				182FE154199B843B008F6477 /* rest_client */,
+				182FE129199B837B008F6477 /* ShoutAppDelegate.h */,
+				182FE12A199B837B008F6477 /* ShoutAppDelegate.m */,
+				182FE12C199B837B008F6477 /* Main_iPhone.storyboard */,
+				182FE12F199B837B008F6477 /* Main_iPad.storyboard */,
+				182FE132199B837B008F6477 /* ShoutViewController.h */,
+				182FE133199B837B008F6477 /* ShoutViewController.m */,
+				182FE135199B837B008F6477 /* Images.xcassets */,
+				182FE121199B837B008F6477 /* Supporting Files */,
+			);
+			path = Shout;
+			sourceTree = "<group>";
+		};
+		182FE121199B837B008F6477 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				182FE122199B837B008F6477 /* Shout-Info.plist */,
+				182FE123199B837B008F6477 /* InfoPlist.strings */,
+				182FE126199B837B008F6477 /* main.m */,
+				182FE128199B837B008F6477 /* Shout-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		182FE142199B837B008F6477 /* ShoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				182FE148199B837B008F6477 /* ShoutTests.m */,
+				182FE143199B837B008F6477 /* Supporting Files */,
+			);
+			path = ShoutTests;
+			sourceTree = "<group>";
+		};
+		182FE143199B837B008F6477 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				182FE144199B837B008F6477 /* ShoutTests-Info.plist */,
+				182FE145199B837B008F6477 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		182FE154199B843B008F6477 /* rest_client */ = {
+			isa = PBXGroup;
+			children = (
+				18AFDCDB199CE048006D457B /* ShoutFetchAPICall.h */,
+				18AFDCDC199CE048006D457B /* ShoutFetchAPICall.m */,
+				184D3E2E19C49B04005968B7 /* ShoutPostEchoShutupAPICall.h */,
+				184D3E2F19C49B04005968B7 /* ShoutPostEchoShutupAPICall.m */,
+				184D3E3119C49B27005968B7 /* ShoutPostCommentAPICall.h */,
+				184D3E3219C49B27005968B7 /* ShoutPostCommentAPICall.m */,
+			);
+			name = rest_client;
+			sourceTree = "<group>";
+		};
+		182FE155199B8474008F6477 /* loginmanager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = loginmanager;
+			sourceTree = "<group>";
+		};
+		182FE156199B847C008F6477 /* location_service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = location_service;
+			sourceTree = "<group>";
+		};
+		182FE157199B8527008F6477 /* gcm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = gcm;
+			sourceTree = "<group>";
+		};
+		182FE158199B8532008F6477 /* functions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = functions;
+			sourceTree = "<group>";
+		};
+		182FE159199B8562008F6477 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				18471846199F87BE00DE1C0F /* ShoutConstants.h */,
+				18471847199F87BE00DE1C0F /* ShoutConstants.m */,
+			);
+			name = constants;
+			sourceTree = "<group>";
+		};
+		182FE15A199B856B008F6477 /* api_entities */ = {
+			isa = PBXGroup;
+			children = (
+				18AFDCD8199CE03C006D457B /* ShoutFetch.h */,
+				18AFDCD9199CE03C006D457B /* ShoutFetch.m */,
+				18F7D24219A1D55800125D6F /* ShoutFetchNotification.h */,
+				18F7D24319A1D55800125D6F /* ShoutFetchNotification.m */,
+				18F7D24519A1D57100125D6F /* ShoutFetchNotificationCount.h */,
+				18F7D24619A1D57100125D6F /* ShoutFetchNotificationCount.m */,
+				18F7D24819A1D59A00125D6F /* ShoutFetchComment.h */,
+				18F7D24919A1D59A00125D6F /* ShoutFetchComment.m */,
+				18F7D24B19A1D5B700125D6F /* ShoutFetchEchoUser.h */,
+				18F7D24C19A1D5B700125D6F /* ShoutFetchEchoUser.m */,
+				18F7D24E19A1D5D500125D6F /* ShoutFetchImage.h */,
+				18F7D24F19A1D5D500125D6F /* ShoutFetchImage.m */,
+				18F7D25119A1D5E800125D6F /* ShoutFetchUserImage.h */,
+				18F7D25219A1D5E800125D6F /* ShoutFetchUserImage.m */,
+				18F7D25419A1D60900125D6F /* ShoutFetchUserInfo.h */,
+				18F7D25519A1D60900125D6F /* ShoutFetchUserInfo.m */,
+				18F7D25719A1D62100125D6F /* ShoutFetchUserShouts.h */,
+				18F7D25819A1D62100125D6F /* ShoutFetchUserShouts.m */,
+				18F7D25A19A1D63900125D6F /* ShoutPost.h */,
+				18F7D25B19A1D63900125D6F /* ShoutPost.m */,
+				18F7D25D19A1D65400125D6F /* ShoutPostEchoShutup.h */,
+				18F7D25E19A1D65400125D6F /* ShoutPostEchoShutup.m */,
+				18F7D26019A1D66A00125D6F /* ShoutPostComment.h */,
+				18F7D26119A1D66A00125D6F /* ShoutPostComment.m */,
+				18F7D26319A1D68800125D6F /* ShoutMuteUser.h */,
+				18F7D26419A1D68800125D6F /* ShoutMuteUser.m */,
+				18F7D26619A1D69A00125D6F /* ShoutReportAbuse.h */,
+				18F7D26719A1D69A00125D6F /* ShoutReportAbuse.m */,
+				18F7D26919A2143700125D6F /* Shout.h */,
+				18F7D26A19A2143700125D6F /* Shout.m */,
+				18F7D26C19A2144500125D6F /* ShoutComment.h */,
+				18F7D26D19A2144500125D6F /* ShoutComment.m */,
+			);
+			name = api_entities;
+			sourceTree = "<group>";
+		};
+		182FE15B199B8579008F6477 /* activities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = activities;
+			sourceTree = "<group>";
+		};
+		7BAEC9F519A7649800C1B331 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7BAECA0819A773E500C1B331 /* ShoutFeedTableViewController.h */,
+				7BAECA0919A773E500C1B331 /* ShoutFeedTableViewController.m */,
+				7BAECA0A19A773E500C1B331 /* ShoutFeedTableViewController.xib */,
+				7BAECA0D19A7784000C1B331 /* ShoutFeedTableViewCell.xib */,
+				7BAECA0F19A779C900C1B331 /* ShoutFeedTableViewCell.h */,
+				7BAECA1019A779C900C1B331 /* ShoutFeedTableViewCell.m */,
+				1857653B19C74CA900F89AE8 /* ShoutCommentViewController.h */,
+				1857653C19C74CA900F89AE8 /* ShoutCommentViewController.m */,
+				1857653D19C74CA900F89AE8 /* ShoutCommentViewController.xib */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		182FE116199B837B008F6477 /* Shout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182FE14C199B837B008F6477 /* Build configuration list for PBXNativeTarget "Shout" */;
+			buildPhases = (
+				182FE113199B837B008F6477 /* Sources */,
+				182FE114199B837B008F6477 /* Frameworks */,
+				182FE115199B837B008F6477 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shout;
+			productName = Shout;
+			productReference = 182FE117199B837B008F6477 /* Shout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		182FE13A199B837B008F6477 /* ShoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182FE14F199B837B008F6477 /* Build configuration list for PBXNativeTarget "ShoutTests" */;
+			buildPhases = (
+				182FE137199B837B008F6477 /* Sources */,
+				182FE138199B837B008F6477 /* Frameworks */,
+				182FE139199B837B008F6477 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				182FE141199B837B008F6477 /* PBXTargetDependency */,
+			);
+			name = ShoutTests;
+			productName = ShoutTests;
+			productReference = 182FE13B199B837B008F6477 /* ShoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		182FE10F199B837B008F6477 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Shout;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Idea Labs";
+				TargetAttributes = {
+					182FE13A199B837B008F6477 = {
+						TestTargetID = 182FE116199B837B008F6477;
+					};
+				};
+			};
+			buildConfigurationList = 182FE112199B837B008F6477 /* Build configuration list for PBXProject "Shout" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 182FE10E199B837B008F6477;
+			productRefGroup = 182FE118199B837B008F6477 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				182FE116199B837B008F6477 /* Shout */,
+				182FE13A199B837B008F6477 /* ShoutTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		182FE115199B837B008F6477 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182FE131199B837B008F6477 /* Main_iPad.storyboard in Resources */,
+				7BAECA0E19A7784000C1B331 /* ShoutFeedTableViewCell.xib in Resources */,
+				182FE136199B837B008F6477 /* Images.xcassets in Resources */,
+				182FE12E199B837B008F6477 /* Main_iPhone.storyboard in Resources */,
+				7BAECA0C19A773E500C1B331 /* ShoutFeedTableViewController.xib in Resources */,
+				182FE125199B837B008F6477 /* InfoPlist.strings in Resources */,
+				1857653F19C74CA900F89AE8 /* ShoutCommentViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182FE139199B837B008F6477 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182FE147199B837B008F6477 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		182FE113199B837B008F6477 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F7D24D19A1D5B700125D6F /* ShoutFetchEchoUser.m in Sources */,
+				7BAECA1119A779C900C1B331 /* ShoutFeedTableViewCell.m in Sources */,
+				18F7D25F19A1D65400125D6F /* ShoutPostEchoShutup.m in Sources */,
+				18F7D26E19A2144500125D6F /* ShoutComment.m in Sources */,
+				1857653E19C74CA900F89AE8 /* ShoutCommentViewController.m in Sources */,
+				18AFDCDA199CE03C006D457B /* ShoutFetch.m in Sources */,
+				184D3E3319C49B27005968B7 /* ShoutPostCommentAPICall.m in Sources */,
+				18471848199F87BE00DE1C0F /* ShoutConstants.m in Sources */,
+				184D3E3019C49B04005968B7 /* ShoutPostEchoShutupAPICall.m in Sources */,
+				7BAECA0B19A773E500C1B331 /* ShoutFeedTableViewController.m in Sources */,
+				18F7D26219A1D66A00125D6F /* ShoutPostComment.m in Sources */,
+				18AFDCDD199CE048006D457B /* ShoutFetchAPICall.m in Sources */,
+				18F7D25C19A1D63900125D6F /* ShoutPost.m in Sources */,
+				182FE134199B837B008F6477 /* ShoutViewController.m in Sources */,
+				18F7D24419A1D55800125D6F /* ShoutFetchNotification.m in Sources */,
+				18F7D25019A1D5D500125D6F /* ShoutFetchImage.m in Sources */,
+				18F7D24719A1D57100125D6F /* ShoutFetchNotificationCount.m in Sources */,
+				18F7D26819A1D69A00125D6F /* ShoutReportAbuse.m in Sources */,
+				182FE12B199B837B008F6477 /* ShoutAppDelegate.m in Sources */,
+				18F7D26B19A2143700125D6F /* Shout.m in Sources */,
+				18F7D25919A1D62100125D6F /* ShoutFetchUserShouts.m in Sources */,
+				18F7D26519A1D68800125D6F /* ShoutMuteUser.m in Sources */,
+				18F7D24A19A1D59A00125D6F /* ShoutFetchComment.m in Sources */,
+				182FE127199B837B008F6477 /* main.m in Sources */,
+				18F7D25319A1D5E800125D6F /* ShoutFetchUserImage.m in Sources */,
+				18F7D25619A1D60900125D6F /* ShoutFetchUserInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182FE137199B837B008F6477 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182FE149199B837B008F6477 /* ShoutTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		182FE141199B837B008F6477 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 182FE116199B837B008F6477 /* Shout */;
+			targetProxy = 182FE140199B837B008F6477 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		182FE123199B837B008F6477 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				182FE124199B837B008F6477 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		182FE12C199B837B008F6477 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				182FE12D199B837B008F6477 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		182FE12F199B837B008F6477 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				182FE130199B837B008F6477 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		182FE145199B837B008F6477 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				182FE146199B837B008F6477 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		182FE14A199B837B008F6477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		182FE14B199B837B008F6477 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		182FE14D199B837B008F6477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shout/Shout-Prefix.pch";
+				INFOPLIST_FILE = "Shout/Shout-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		182FE14E199B837B008F6477 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shout/Shout-Prefix.pch";
+				INFOPLIST_FILE = "Shout/Shout-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		182FE150199B837B008F6477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Shout.app/Shout";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shout/Shout-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ShoutTests/ShoutTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		182FE151199B837B008F6477 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Shout.app/Shout";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shout/Shout-Prefix.pch";
+				INFOPLIST_FILE = "ShoutTests/ShoutTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		182FE112199B837B008F6477 /* Build configuration list for PBXProject "Shout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182FE14A199B837B008F6477 /* Debug */,
+				182FE14B199B837B008F6477 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182FE14C199B837B008F6477 /* Build configuration list for PBXNativeTarget "Shout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182FE14D199B837B008F6477 /* Debug */,
+				182FE14E199B837B008F6477 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182FE14F199B837B008F6477 /* Build configuration list for PBXNativeTarget "ShoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182FE150199B837B008F6477 /* Debug */,
+				182FE151199B837B008F6477 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 182FE10F199B837B008F6477 /* Project object */;
+}

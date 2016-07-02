@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>584459B1-5AD1-454B-A285-A0101B5274FD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Shout</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B026B020853FE053D3D174DC95DB1E2A2E7ED415</key>
+		<string>https://bitbucket.org/shoutapp/shout-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Shout.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B026B020853FE053D3D174DC95DB1E2A2E7ED415</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/shoutapp/shout-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B026B020853FE053D3D174DC95DB1E2A2E7ED415</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B026B020853FE053D3D174DC95DB1E2A2E7ED415</string>
+			<key>IDESourceControlWCCName</key>
+			<string>shout-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
